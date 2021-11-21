@@ -9,7 +9,14 @@ public class Zoologico {
 	String ubicacion;
 	ArrayList<Zona> zonas;
 	
-
+	public Zoologico(){}
+	
+	public Zoologico(String nombre, String ubicacion) {
+		this.nombre=nombre;
+		this.ubicacion=ubicacion;
+		
+	}
+	
 	public int cantidadTotalAnimales() {
 		return Animal.getTotalAnimales();
 	}
