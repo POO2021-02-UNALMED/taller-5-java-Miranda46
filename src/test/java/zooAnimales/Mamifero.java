@@ -59,7 +59,7 @@ public class Mamifero extends Animal {
 	public void setPatas(int patas) {
 		this.patas = patas;
 	}
-	public static int getcantidadMamiferos() {
+	public static int cantidadMamiferos() {
 		return cantidadMamiferos;
 	}
 

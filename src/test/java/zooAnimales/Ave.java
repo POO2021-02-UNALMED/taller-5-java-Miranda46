@@ -52,7 +52,7 @@ public class Ave extends Animal {
 	public void setColorPlumas(String colorPlumas) {
 		this.colorPlumas = colorPlumas;
 	}
-	public static int getcantidadAves() {
+	public static int cantidadAves() {
 		return cantidadAves;
 	}
 

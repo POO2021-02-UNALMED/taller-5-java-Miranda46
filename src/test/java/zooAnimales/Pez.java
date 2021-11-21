@@ -53,7 +53,7 @@ public class Pez extends Animal {
 	public void setCantidadAletas(int cantidadAletas) {
 		this.cantidadAletas = cantidadAletas;
 	}
-	public static int getcantidadPeces() {
+	public static int cantidadPeces() {
 		return cantidadPeces;
 	}
 
