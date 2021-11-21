@@ -24,16 +24,18 @@ public class test {
 		z2.agregarAnimales(Reptil.crearIguana("test", 11, "M"));
 		z2.agregarAnimales(Reptil.crearSerpiente("test", 11, "M"));
 		z2.agregarAnimales(Pez.crearSalmon("test", 11, "M"));
-		z2.agregarAnimales(Pez.crearBacalao("test", 11, "M"));
-		z2.agregarAnimales(Pez.crearBacalao("test", 11, "M"));
-		Mamifero.crearCaballo("test", 11, "M");
-		Ave.crearHalcon("test", 11, "M");
-		Anfibio.crearRana("test", 11, "M");
+		z2.agregarAnimales(Pez.crearBacalao("test454545", 11, "M"));
+		Mamifero.crearCaballo("test43434", 11, "M");
+		Ave.crearHalcon("test3434", 11, "M");
+		Anfibio.crearRana("test3434", 11, "M");
 		Reptil.crearIguana("test", 11, "M");
 		Pez.crearBacalao("test", 11, "M");
 		
 				//ok = true;
 				System.out.println(zoo.cantidadTotalAnimales() + "13");
+				
+				System.out.println(zoo.getZona().get(0).getAnimales());
+				System.out.println(zoo.getZona().get(0).cantidadAnimales());
 			}
 			
 	    }

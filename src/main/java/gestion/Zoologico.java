@@ -23,7 +23,7 @@ public class Zoologico {
 		int i;
 		for (i = 0; i < zonas.size(); i++) {
             cont+=zonas.get(i).getAnimales().size();}
-		return cont/2;
+		return cont;
 	}
 	
 	public String getNombre() {
