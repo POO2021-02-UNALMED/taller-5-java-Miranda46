@@ -70,5 +70,5 @@ public class Mamifero extends Animal {
 	
 	
 	
-	public Mamifero() {}
+	public Mamifero() {cantidadMamiferos++;}
 }

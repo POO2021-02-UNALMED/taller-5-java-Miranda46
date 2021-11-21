@@ -10,7 +10,7 @@ public class Anfibio extends Animal {
 	private String colorPiel;
 	private boolean venenoso;
 	
-	public Anfibio() {}
+	public Anfibio() {cantidadAnfibios++;}
 	
 	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
 		this.nombre=nombre;
@@ -61,7 +61,7 @@ public class Anfibio extends Animal {
 	public static void setcantidadAnfibios(int cantidadAnfibios) {
 		Anfibio.cantidadAnfibios = cantidadAnfibios;
 	}
-	public static String movimiento() {
+	public String movimiento() {
 		return "saltar";
 		
 	}

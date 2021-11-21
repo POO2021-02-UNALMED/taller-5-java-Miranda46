@@ -5,29 +5,27 @@ public class test {
 	public static void main(String[] args) {
 	
 			
-			new Anfibio();
-			new Anfibio();
-			new Mamifero();
-			new Mamifero();
-			new Mamifero();
-			new Reptil();
-			new Pez();
-			new Ave();
-			new Ave();
+	
+			
+		
+			
+			Animal a1 = new Anfibio();
+			Animal a2 = new Ave();
+			Animal a3 = new Mamifero();
+			Animal a4 = new Pez();
+			Animal a5 = new Reptil();
 			boolean ok = false;
-			String  comp = "Mamiferos: 4\n" + 
-					"Aves: 4\n" + 
-					"Reptiles: 2\n" + 
-					"Peces: 2\n" + 
-					"Anfibios: 3";
-			if(Animal.totalPorTipo().equals(comp)) {
+			if(a1.movimiento().equals("saltar") && a2.movimiento().equals("volar")
+					&& a3.movimiento().equals("desplazarse") && a4.movimiento().equals("nadar")
+					&& a5.movimiento().equals("reptar")) {
 				ok = true;
-				
-			System.out.println(ok);
+			}
+			System.out.println(ok+ a1.movimiento() + a2.movimiento());
+	    }
 
 	}
 
 
-	}
-}
+
+
 		

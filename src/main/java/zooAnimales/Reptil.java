@@ -11,7 +11,7 @@ public class Reptil extends Animal {
 	private String colorEscamas;
 	private int largoCola;
 	
-	public Reptil() {}
+	public Reptil() {cantidadReptiles++;}
 	
 	public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
 		this.nombre=nombre;
@@ -67,7 +67,7 @@ public class Reptil extends Animal {
 	public static void setcantidadReptiles(int cantidadReptiles) {
 		Reptil.cantidadReptiles = cantidadReptiles;
 	}
-	public static String movimiento() {
+	public String movimiento() {
 		return "reptar";
 		
 	}
