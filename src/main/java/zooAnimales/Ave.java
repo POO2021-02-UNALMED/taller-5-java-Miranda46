@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 public class Ave extends Animal {
 	private static int cantidadAves;
-	private static ArrayList<Ave> listado;
+	private static ArrayList<Ave> listado = new ArrayList<Ave>();
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
 	
 	public Ave() {
-	cantidadAves++;}
+	cantidadAves++;
+	nuevoAnimal();}
 	
 	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
 		this.nombre=nombre;
@@ -19,6 +20,7 @@ public class Ave extends Animal {
 		this.genero=genero;
 		this.colorPlumas=colorPlumas;
 		cantidadAves++;
+		nuevoAnimal();
 	}
 	
 	public ArrayList<Ave> getListado() {

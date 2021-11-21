@@ -7,7 +7,7 @@ import zooAnimales.Animal;
 public class Zoologico {
 	String nombre;
 	String ubicacion;
-	ArrayList<Zona> zonas;
+	ArrayList<Zona> zonas = new ArrayList<Zona>();
 	
 	public Zoologico(){}
 	
@@ -15,11 +15,17 @@ public class Zoologico {
 		this.nombre=nombre;
 		this.ubicacion=ubicacion;
 		
+		
 	}
 	
 	public int cantidadTotalAnimales() {
-		return Animal.getTotalAnimales();
+		int cont=0;
+		int i;
+		for (i = 0; i < zonas.size(); i++) {
+            cont+=zonas.get(i).getAnimales().size();}
+		return cont/2;
 	}
+	
 	public String getNombre() {
 		return nombre;
 		
@@ -27,8 +33,8 @@ public class Zoologico {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public void agregarZonas(Zona z1) {
-		zonas.add(z1);
+	public void agregarZonas(Zona zonas) {
+		this.zonas.add(zonas);
 		
 	}
 	public ArrayList<Zona> getZona() {	

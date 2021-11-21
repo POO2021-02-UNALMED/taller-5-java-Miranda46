@@ -1,29 +1,44 @@
 package zooAnimales;
 
+import gestion.Zona;
+import gestion.Zoologico;
+
 public class test {
 
 	public static void main(String[] args) {
 	
-			
-	
-			
+		Zoologico zoo = new Zoologico();
+		Zona z1 = new Zona();
+		Zona z2 = new Zona();
+		zoo.agregarZonas(z1);
+		zoo.agregarZonas(z2);
+		z1.agregarAnimales(Mamifero.crearCaballo("test", 11, "M"));
+		z1.agregarAnimales(Mamifero.crearCaballo("test", 11, "M"));
+		z1.agregarAnimales(Mamifero.crearLeon("test", 11, "M"));
+		z1.agregarAnimales(Ave.crearHalcon("test", 11, "M"));
+		z1.agregarAnimales(Ave.crearHalcon("test", 11, "M"));
+		z1.agregarAnimales(Ave.crearAguila("test", 11, "M"));
+		z1.agregarAnimales(Ave.crearAguila("test", 11, "M"));
+		z1.agregarAnimales(Anfibio.crearRana("test", 11, "M"));
+		z2.agregarAnimales(Anfibio.crearSalamandra("test", 11, "M"));
+		z2.agregarAnimales(Reptil.crearIguana("test", 11, "M"));
+		z2.agregarAnimales(Reptil.crearSerpiente("test", 11, "M"));
+		z2.agregarAnimales(Pez.crearSalmon("test", 11, "M"));
+		z2.agregarAnimales(Pez.crearBacalao("test", 11, "M"));
+		z2.agregarAnimales(Pez.crearBacalao("test", 11, "M"));
+		Mamifero.crearCaballo("test", 11, "M");
+		Ave.crearHalcon("test", 11, "M");
+		Anfibio.crearRana("test", 11, "M");
+		Reptil.crearIguana("test", 11, "M");
+		Pez.crearBacalao("test", 11, "M");
 		
-			
-			Animal a1 = new Anfibio();
-			Animal a2 = new Ave();
-			Animal a3 = new Mamifero();
-			Animal a4 = new Pez();
-			Animal a5 = new Reptil();
-			boolean ok = false;
-			if(a1.movimiento().equals("saltar") && a2.movimiento().equals("volar")
-					&& a3.movimiento().equals("desplazarse") && a4.movimiento().equals("nadar")
-					&& a5.movimiento().equals("reptar")) {
-				ok = true;
+				//ok = true;
+				System.out.println(zoo.cantidadTotalAnimales() + "13");
 			}
-			System.out.println(ok+ a1.movimiento() + a2.movimiento());
+			
 	    }
 
-	}
+	
 
 
 
